@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.bNav.selectedItemId = R.id.star
         binding.bNav.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.star -> {
