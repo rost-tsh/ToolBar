@@ -5,12 +5,31 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import com.example.toolbarlesson.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.bNav.setOnItemSelectedListener {
+            when(it.itemId){
+                R.id.star -> {
+                    Toast.makeText(this, "Star", Toast.LENGTH_SHORT).show()
+                }
+                R.id.camera -> {
+                    Toast.makeText(this, "Camera", Toast.LENGTH_SHORT).show()
+                }
+                R.id.money -> {
+                    Toast.makeText(this, "Money", Toast.LENGTH_SHORT).show()
+                }
+                R.id.restart -> {
+                    Toast.makeText(this, "Restart", Toast.LENGTH_SHORT).show()
+                }
+            }
+            true
+        }
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = "Menu"
     }

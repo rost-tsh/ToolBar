@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/star"
+        android:id="@+id/star"
+        android:icon="@drawable/ic_star"
+        android:orderInCategory="3"
+        />
+    <item
+        android:title="@string/restart"
+        android:id="@+id/restart"
+        android:icon="@drawable/ic_restart"
+        android:orderInCategory="2"
+        />
+    <item
+        android:title="@string/money"
+        android:id="@+id/money"
+        android:icon="@drawable/ic_money"
+        android:orderInCategory="4"
+        />
+    <item
+        android:title="@string/camera"
+        android:id="@+id/camera"
+        android:icon="@drawable/ic_camera"
+        android:orderInCategory="1"
+        />
+</menu>

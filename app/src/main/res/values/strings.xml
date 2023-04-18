@@ -4,4 +4,8 @@
     <string name="save">Save</string>
     <string name="del">Delete</string>
     <string name="search">Search</string>
+    <string name="star">Star</string>
+    <string name="restart">Restart</string>
+    <string name="money">Money</string>
+    <string name="camera">Camera</string>
 </resources>
